@@ -1,5 +1,7 @@
+import '../styles/index.scss';
 import en from './keys-en.js';
 import ru from './keys-ru.js';
+
 import exceptionsKeyCapsLockEnglish from './exceptionsKeyCapsLockEnglish.js';
 import exceptionsKeyCapsLockRussian from './exceptionsKeyCapsLockRussian.js';
 import exceptionsKeyShift from './exceptionsKeyShift.js';
@@ -66,7 +68,7 @@ const VirtualKeyboard = {
         this.insertToInput(key.code, keyboardKey);
       });
 
-      // chose style to key
+      // chose styles to key
       switch (key.code) {
         case 'Backspace':
           keyboardKey.classList.add('keyboard__key_large');

@@ -16,13 +16,19 @@ module.exports = {
       },
       {
         test: /\.(sass|scss)$/,
-        use: [{
-          loader: "style-loader" // creates style nodes from JS strings
-        }, {
-          loader: "css-loader" // translates CSS into CommonJS
-        }, {
-          loader: "sass-loader" // compiles Sass to CSS
-        }]
+        use: [
+          "style-loader",// creates styles nodes from JS strings
+          "css-loader",// translates CSS into CommonJS
+          "sass-loader",// compiles Sass to CSS
+          {
+            loader: "sass-resources-loader",
+            options: {
+              resources: [
+                'src/styles/index.scss',
+              ]
+            }
+          },
+        ]
       }]
   },
   entry: './src/app/index.js',
