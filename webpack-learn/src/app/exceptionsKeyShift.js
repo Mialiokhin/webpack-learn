@@ -1,0 +1,20 @@
+const exceptionsKeyShift = [
+  'Backspace',
+  'Tab',
+  'Delete',
+  'CapsLock',
+  'Enter',
+  'ShiftLeft',
+  'ArrowUp',
+  'ShiftRight',
+  'ControlLeft',
+  'MetaLeft',
+  'AltLeft',
+  'Space',
+  'AltRight',
+  'ArrowLeft',
+  'ArrowDown',
+  'ArrowRight',
+  'ControlRight',
+];
+export default exceptionsKeyShift;
