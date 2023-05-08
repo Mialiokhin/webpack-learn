@@ -1,0 +1,121 @@
+html {
+  font-size: 10px;
+}
+
+.keyboard {
+  width: 100%;
+  max-width: 120rem;
+  margin: 3rem auto;
+  padding-top: 0.5rem;
+  background: #9E8279;
+  user-select: none;
+}
+
+.keyboard__input {
+  display: block;
+  width: 90%;
+  height: 25rem;
+  max-height: 40rem;
+  margin: 3.5rem auto;
+  padding: 1rem;
+  font-size: 2rem;
+  border-color: #677C77;
+  outline: none;
+}
+
+.keyboard__info {
+  background: white;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.keyboard__keys {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: 29rem;
+  text-align: center;
+  background: #677C77;
+  white-space: nowrap;
+}
+
+.keyboard__key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  max-height: 5rem;
+  width: 6%;
+  max-width: 7rem;
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: -webkit-linear-gradient(90deg, #000000, #121212, #000000);
+  background: linear-gradient(90deg, #000000, #121212, #000000);
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 3px #999;
+}
+
+@media (min-width: 500px) {
+  .keyboard__key {
+    height: 6rem;
+  }
+}
+@media (max-width: 768px) {
+  .keyboard__key {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .keyboard__key {
+    height: 7rem;
+  }
+}
+.keyboard__key:hover {
+  background: #374709;
+}
+
+.keyboard__key:active {
+  background: #759242;
+  transform: translateY(4px);
+  box-shadow: 0 1px #999;
+}
+
+.keyboard__key._active {
+  background: #759242;
+  transform: translateY(2px);
+  box-shadow: 0 1px #999;
+}
+
+.keyboard__key._hold-active {
+  background: #759242;
+  transform: translateY(2px);
+  box-shadow: 0 1px #999;
+}
+
+.keyboard__key_tab {
+  width: 7%;
+  max-width: 7.8rem;
+}
+@media (max-width: 990px) {
+  .keyboard__key_tab {
+    width: 6%;
+  }
+}
+
+.keyboard__key_large {
+  width: 13%;
+  max-width: 15rem;
+}
+
+.keyboard__key_largest {
+  width: 46%;
+  max-width: 53.5rem;
+}
+
+/*# sourceMappingURL=index.css.map */
